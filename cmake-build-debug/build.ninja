@@ -49,8 +49,20 @@ cmake_ninja_workdir = D$:/Projects/6502/cmake-build-debug/
 
 build cmake_object_order_depends_target_6502: phony || CMakeFiles/6502.dir
 
-build CMakeFiles/6502.dir/main_6502.cpp.obj: CXX_COMPILER__6502_Debug D$:/Projects/6502/main_6502.cpp || cmake_object_order_depends_target_6502
-  DEP_FILE = CMakeFiles\6502.dir\main_6502.cpp.obj.d
+build CMakeFiles/6502.dir/6502.cpp.obj: CXX_COMPILER__6502_Debug D$:/Projects/6502/6502.cpp || cmake_object_order_depends_target_6502
+  DEP_FILE = CMakeFiles\6502.dir\6502.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\6502.dir
+  OBJECT_FILE_DIR = CMakeFiles\6502.dir
+
+build CMakeFiles/6502.dir/cpu_6502.cpp.obj: CXX_COMPILER__6502_Debug D$:/Projects/6502/cpu_6502.cpp || cmake_object_order_depends_target_6502
+  DEP_FILE = CMakeFiles\6502.dir\cpu_6502.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\6502.dir
+  OBJECT_FILE_DIR = CMakeFiles\6502.dir
+
+build CMakeFiles/6502.dir/mem_6502.cpp.obj: CXX_COMPILER__6502_Debug D$:/Projects/6502/mem_6502.cpp || cmake_object_order_depends_target_6502
+  DEP_FILE = CMakeFiles\6502.dir\mem_6502.cpp.obj.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles\6502.dir
   OBJECT_FILE_DIR = CMakeFiles\6502.dir
@@ -63,7 +75,7 @@ build CMakeFiles/6502.dir/main_6502.cpp.obj: CXX_COMPILER__6502_Debug D$:/Projec
 #############################################
 # Link the executable 6502.exe
 
-build 6502.exe: CXX_EXECUTABLE_LINKER__6502_Debug CMakeFiles/6502.dir/main_6502.cpp.obj
+build 6502.exe: CXX_EXECUTABLE_LINKER__6502_Debug CMakeFiles/6502.dir/6502.cpp.obj CMakeFiles/6502.dir/cpu_6502.cpp.obj CMakeFiles/6502.dir/mem_6502.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\6502.dir

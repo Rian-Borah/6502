@@ -1,12 +1,11 @@
 /******************************************************************************
- * @author:  Rian Borah
- * @date:    23 Aug, 2023
+ * @author:     Rian Borah
+ * @date:       23 Aug, 2023
  ******************************************************************************/
 
 /******************************************************************************
- * @file:    cpu_6502.h
- * @desc:    Header file for 6502 microprocessor CPU
- * @ref:
+ * @file:       cpu_6502.h
+ * @desc:       Header file for 6502 microprocessor CPU
  *****************************************************************************/
 
 #ifndef INC_6502_CPU_6502_H
@@ -40,20 +39,9 @@ private:
 
 
 public:
-    // opcodes for LDA
-    static constexpr byte
-            LDA_IM  = 0xA9,
-            LDA_ZP  = 0xA5,
-            LDA_ZPX = 0xB5,
-            JSR     = 0x20;
-
     // Class Constructors & Destructors ----------------------------------------
     // Creates new cpu_6502 in the empty state.
     cpu_6502();
-
-    // Copy constructor.
-    cpu_6502(const cpu_6502& CPU);
-
 
     // Manipulation procedures -------------------------------------------------
     /*

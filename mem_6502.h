@@ -1,12 +1,11 @@
 /******************************************************************************
- * @author:  Rian Borah
- * @date:    23 Aug, 2023
+ * @author:     Rian Borah
+ * @date:       23 Aug, 2023
  ******************************************************************************/
 
 /******************************************************************************
- * @file:    mem_6502.h
- * @desc:    Header file for 6502 microprocessor Memory
- * @ref:
+ * @file:       mem_6502.h
+ * @desc:       Header file for 6502 microprocessor Memory
  *****************************************************************************/
 
 #ifndef INC_6502_MEM_6502_H
@@ -37,6 +36,7 @@ public:
     // Copy constructor.
     mem_6502(const mem_6502& Mem);
 
+    // Manipulation procedures -------------------------------------------------
     /*
      *  init()
      *
@@ -46,6 +46,7 @@ public:
      * */
     void init();
 
+    // Overloaded Operators ----------------------------------------------------
     /*
      *  operator[]
      *

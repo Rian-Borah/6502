@@ -1,12 +1,11 @@
 /******************************************************************************
- * @author:  Rian Borah
- * @date:    23 Aug, 2023
+ * @author:     Rian Borah
+ * @date:       23 Aug, 2023
  ******************************************************************************/
 
 /******************************************************************************
- * @file:    cpu_6502.cpp
- * @desc:    Source file for 6502 microprocessor CPU
- * @ref:
+ * @file:       cpu_6502.cpp
+ * @desc:       Source file for 6502 microprocessor CPU
  *****************************************************************************/
 
 #include "cpu_6502.h"
@@ -20,23 +19,6 @@ cpu_6502::cpu_6502(){
     C = Z = I = D = B = V = N = 0;
     A = X = Y = 0x00;
 }
-
-// Copy Constructor
-cpu_6502::cpu_6502(const cpu_6502& CPU) {
-    PC = CPU.PC;
-    SP = CPU.SP;
-    C = CPU.C;
-    Z = CPU.Z;
-    I = CPU.I;
-    D = CPU.D;
-    B = CPU.B;
-    V = CPU.V;
-    N = CPU.N;
-    A = CPU.A;
-    X = CPU.X;
-    Y = CPU.Y;
-}
-
 
 // Manipulation procedures -------------------------------------------------
 /*
